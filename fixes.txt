@@ -17,3 +17,22 @@ Test Cases:
 - Verified that clicking the "Submit" button now triggers the expected action.
 - Confirmed that the checkout process completes successfully.
 Status: Fixed/Verified
+
+Bug Fix Log
+
+Date: 2024-06-11
+Issue ID: $124
+Description of Bug: The order summary was not displaying the correct total amount.
+Steps to Reproduce: 
+1. Add multiple items to the cart.
+2. Proceed to the order summary page.
+3. Observe that the total amount does not match the sum of item prices.
+Root Cause: The total calculation function was not including taxes in the final amount.
+Fix Description: Updated the calculation logic to include taxes in the total.
+Files Modified: 
+- src/utils/calculateTotal.js
+- src/pages/OrderSummary.js
+Test Cases: 
+- Verified that the total amount now includes taxes.
+- Confirmed that the displayed total matches the expected value for various cart scenarios.
+Status: Fixed/Verified
