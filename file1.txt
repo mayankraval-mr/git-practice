@@ -7,3 +7,7 @@ Here is another line of text to further illustrate the contents of file1.txt.
 Feel free to modify or expand this file as needed for your demonstration.
 This concludes the additional content for this example file.
  
+
+Here is a new line of content added for further demonstration.
+You can continue to add more lines as needed to expand this example file.
+This file now contains even more sample text for your reference.
