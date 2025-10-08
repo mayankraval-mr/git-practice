@@ -1,0 +1,19 @@
+Bug Fix Log
+
+Date: 2024-06-10
+Issue ID: $123
+Description of Bug: The submit button was not responding to clicks on the checkout page.
+Steps to Reproduce: 
+1. Navigate to the checkout page.
+2. Fill in all required fields.
+3. Click the "Submit" button.
+4. Observe that nothing happens.
+Root Cause: The onClick handler was not properly bound to the button due to a missing function reference.
+Fix Description: Updated the Button component to correctly bind the onClick handler.
+Files Modified: 
+- src/components/Button.js
+- src/pages/Checkout.js
+Test Cases: 
+- Verified that clicking the "Submit" button now triggers the expected action.
+- Confirmed that the checkout process completes successfully.
+Status: Fixed/Verified
