@@ -18,21 +18,20 @@ Test Cases:
 - Confirmed that the checkout process completes successfully.
 Status: Fixed/Verified
 
-Bug Fix Log
-
 Date: 2024-06-11
 Issue ID: $124
-Description of Bug: The order summary was not displaying the correct total amount.
+Description of Bug: Error message not displayed when payment fails on the checkout page.
 Steps to Reproduce: 
-1. Add multiple items to the cart.
-2. Proceed to the order summary page.
-3. Observe that the total amount does not match the sum of item prices.
-Root Cause: The total calculation function was not including taxes in the final amount.
-Fix Description: Updated the calculation logic to include taxes in the total.
+1. Navigate to the checkout page.
+2. Enter invalid payment details.
+3. Click the "Submit" button.
+4. Observe that no error message is shown.
+Root Cause: The error handling logic was missing a case for payment failures.
+Fix Description: Added error handling for payment failures and display of appropriate error messages.
 Files Modified: 
-- src/utils/calculateTotal.js
-- src/pages/OrderSummary.js
+- src/pages/Checkout.js
+- src/utils/payment.js
 Test Cases: 
-- Verified that the total amount now includes taxes.
-- Confirmed that the displayed total matches the expected value for various cart scenarios.
+- Verified that an error message appears when payment fails.
+- Confirmed that successful payments proceed as expected.
 Status: Fixed/Verified
