@@ -1,3 +1,9 @@
 This is some sample text added to file1.txt.
 Here is some additional relevant information for file1.txt.
 This file contains example text for demonstration purposes.
+
+
+Here is another line of text to further illustrate the contents of file1.txt.
+Feel free to modify or expand this file as needed for your demonstration.
+This concludes the additional content for this example file.
+ 
