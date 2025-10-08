@@ -17,3 +17,21 @@ Test Cases:
 - Verified that clicking the "Submit" button now triggers the expected action.
 - Confirmed that the checkout process completes successfully.
 Status: Fixed/Verified
+
+Date: 2024-06-11
+Issue ID: $124
+Description of Bug: Error message not displayed when payment fails on the checkout page.
+Steps to Reproduce: 
+1. Navigate to the checkout page.
+2. Enter invalid payment details.
+3. Click the "Submit" button.
+4. Observe that no error message is shown.
+Root Cause: The error handling logic was missing a case for payment failures.
+Fix Description: Added error handling for payment failures and display of appropriate error messages.
+Files Modified: 
+- src/pages/Checkout.js
+- src/utils/payment.js
+Test Cases: 
+- Verified that an error message appears when payment fails.
+- Confirmed that successful payments proceed as expected.
+Status: Fixed/Verified
